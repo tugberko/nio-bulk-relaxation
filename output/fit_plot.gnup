@@ -1,0 +1,81 @@
+#Non-spin polarized fit
+
+stats "../non-spin-polarized/F_vs_vol"
+Bzp1n=8
+Bz1n=1
+Et1n=STATS_min_y
+Vz1n=STATS_pos_min_y
+m1mn(x) = Et1n - Bz1n*Vz1n/Bzp1n*(((x/Vz1n)**(1.0-Bzp1n)-1)/(1-Bzp1n)-x/Vz1n+1)
+fit m1mn(x) '../non-spin-polarized/F_vs_vol' via Et1n,Bz1n,Bzp1n,Vz1n
+
+plot "../non-spin-polarized/F_vs_vol"  title "Non-spin polarized" with points pointtype 13 ps 2 linecolor rgb "blue", m1mn(x) title "Non-spin polarized fit" lt rgb "blue"
+
+
+
+
+#FM fit
+
+stats "../fm/F_vs_vol"
+Bzp1fm=8
+Bz1fm=1
+Et1fm=STATS_min_y
+Vz1fm=STATS_pos_min_y
+m1mfm(x) = Et1fm - Bz1fm*Vz1fm/Bzp1fm*(((x/Vz1fm)**(1.0-Bzp1fm)-1)/(1-Bzp1fm)-x/Vz1fm+1)
+fit m1mfm(x) '../fm/F_vs_vol' via Et1fm,Bz1fm,Bzp1fm,Vz1fm
+
+replot "../fm/F_vs_vol"  title "FM" with points pointtype 13 ps 2 linecolor rgb "red", m1mfm(x) title "FM fit" lt rgb "red"
+
+
+
+
+
+#AFM1 fit
+
+stats "../afm1/F_vs_vol"
+Bzp1afm1=8
+Bz1afm1=1
+Et1afm1=STATS_min_y
+Vz1afm1=STATS_pos_min_y
+m1mafm1(x) = Et1afm1 - Bz1afm1*Vz1afm1/Bzp1afm1*(((x/Vz1afm1)**(1.0-Bzp1afm1)-1)/(1-Bzp1afm1)-x/Vz1afm1+1)
+fit m1mafm1(x) '../afm1/F_vs_vol' via Et1afm1,Bz1afm1,Bzp1afm1,Vz1afm1
+
+replot "../afm1/F_vs_vol"  title "AFM1" with points pointtype 13 ps 2 linecolor rgb "green", m1mafm1(x) title "AFM1 fit" lt rgb "green"
+
+
+
+
+#AFM2 fit
+
+stats "../afm2/F_vs_vol"
+Bzp1afm2=8
+Bz1afm2=1
+Et1afm2=STATS_min_y
+Vz1afm2=STATS_pos_min_y
+m1mafm2(x) = Et1afm2 - Bz1afm2*Vz1afm2/Bzp1afm2*(((x/Vz1afm2)**(1.0-Bzp1afm2)-1)/(1-Bzp1afm2)-x/Vz1afm2+1)
+fit m1mafm2(x) '../afm2/F_vs_vol' via Et1afm2,Bz1afm2,Bzp1afm2,Vz1afm2
+
+replot "../afm2/F_vs_vol"  title "AFM2" with points pointtype 13 ps 2 linecolor rgb "orange", m1mafm2(x) title "AFM2 fit" lt rgb "orange"
+
+
+
+
+
+
+set xlabel "Volume (A^3)"
+set ylabel "Energy (eV)"
+set title "Total Energy vs. Volume NiO"
+set grid
+set xtics 10
+set key left top
+
+lpn=(Vz1n)**(0.3333333333333333)
+print "\nLattice parameter (non-spin polarized): ",lpn
+
+lpfm=(Vz1fm)**(0.3333333333333333)
+print "\nLattice parameter (ferromagnetic): = ",lpfm
+
+lpafm1=(Vz1afm1)**(0.3333333333333333)
+print "\nLattice parameter (afm1): ",lpafm1
+
+lpafm2=(Vz1afm2)**(0.3333333333333333)
+print "\nLattice parameter (afm2): ",lpafm2
