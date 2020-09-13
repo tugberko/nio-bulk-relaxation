@@ -8,7 +8,7 @@ The script lattice_parameter.sh is can be used for obtaining lattice parameters 
 
 Lattice parameter (non-spin polarized): 8.323012 Å
 
-Lattice parameter (ferromagnetic): = 8.373165 Å
+Lattice parameter (ferromagnetic): 8.373165 Å
 
 Lattice parameter (afm1): 8.347661 Å
 
