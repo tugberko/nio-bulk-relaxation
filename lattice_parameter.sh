@@ -27,7 +27,7 @@ printf -- "\n ************************\n" ;
 printf -- " ** Non-spin polarized **\n" ;
 printf -- " ************************\n\n" ;
 
-mkdir non-spin-polarized/$i
+mkdir -p non-spin-polarized/$i
 
 cp resources/INCAR-non-spin-polarized non-spin-polarized/$i/INCAR
 cp resources/KPOINTS non-spin-polarized/$i/KPOINTS
@@ -120,7 +120,7 @@ printf -- "\n *******************\n" ;
 printf -- " ** Ferromagnetic **\n" ;
 printf -- " *******************\n\n" ;
 
-mkdir fm/$i
+mkdir -p fm/$i
 
 cp resources/INCAR-fm fm/$i/INCAR
 cp resources/KPOINTS fm/$i/KPOINTS
@@ -143,7 +143,7 @@ printf -- "\n **********\n" ;
 printf -- " ** AFM1 **\n" ;
 printf -- " **********\n\n" ;
 
-mkdir afm1/$i
+mkdir -p afm1/$i
 
 cp resources/INCAR-afm1 afm1/$i/INCAR
 cp resources/KPOINTS afm1/$i/KPOINTS
@@ -240,7 +240,7 @@ printf -- "\n **********\n" ;
 printf -- " ** AFM2 **\n" ;
 printf -- " **********\n\n" ;
 
-mkdir afm2/$i
+mkdir -p afm2/$i
 
 cp resources/INCAR-afm2 afm2/$i/INCAR
 cp resources/KPOINTS afm2/$i/KPOINTS
@@ -349,4 +349,5 @@ echo $i $VOL $NSPE $FME $AFM1E $AFM2E >> output/data
 
 rm non-spin-polarized/$i/WAVECAR
 done
+printf '\nfinished.'
 #end loop
