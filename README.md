@@ -6,12 +6,12 @@ This script is can be used for obtaining lattice parameters of 2x2x2 NiO superce
 
 ![Plot](https://raw.githubusercontent.com/tugberko/nio-bulk-relaxation/master/output/plot.png)
 
-Lattice parameter (non-spin polarized): 8.32301295248533 A
+Lattice parameter (non-spin polarized): 8.323012 A
 
-Lattice parameter (ferromagnetic): = 8.37316512616598 A
+Lattice parameter (ferromagnetic): = 8.373165 A
 
-Lattice parameter (afm1): 8.34766176173736 A
+Lattice parameter (afm1): 8.347661 A
 
-Lattice parameter (afm2): 8.37811543990988 A
+Lattice parameter (afm2): 8.378115 A
 
 
