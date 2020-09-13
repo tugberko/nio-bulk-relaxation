@@ -6,12 +6,12 @@ The script lattice_parameter.sh is can be used for obtaining lattice parameters 
 
 ![Plot](https://raw.githubusercontent.com/tugberko/nio-bulk-relaxation/master/output/plot.png)
 
-Lattice parameter (non-spin polarized): 8.323012 A
+Lattice parameter (non-spin polarized): 8.323012 Å
 
-Lattice parameter (ferromagnetic): = 8.373165 A
+Lattice parameter (ferromagnetic): = 8.373165 Å
 
-Lattice parameter (afm1): 8.347661 A
+Lattice parameter (afm1): 8.347661 Å
 
-Lattice parameter (afm2): 8.378115 A
+Lattice parameter (afm2): 8.378115 Å
 
 
