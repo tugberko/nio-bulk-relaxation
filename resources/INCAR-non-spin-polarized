@@ -1,4 +1,4 @@
-quitSystem = NiO
+System = NiO
 
 NCORE = 1
 LSCAAWARE = .FALSE.
