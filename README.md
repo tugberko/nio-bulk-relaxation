@@ -1,6 +1,6 @@
 # nio-bulk-relaxation
 
-The script lattice_parameter.sh is can be used for obtaining lattice parameters of 2x2x2 NiO supercell in various magnetic configurations (all collinear). After running the script, results are stored in output/data. Murnaghan EOS can be applied by output/fit_plot.gnup .
+The script lattice_parameter.sh is can be used for obtaining lattice parameters of 2x2x2 NiO supercell in various magnetic configurations (all collinear). After running the script, results are stored in output/data. Murnaghan EOS fit can be applied by output/fit_plot.gnup .
 
 ## Results
 
